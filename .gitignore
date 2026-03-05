@@ -1,0 +1,24 @@
+# Maven
+target/
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.eclipse
+.classpath
+.project
+.settings/
+*.class
+
+# Logs
+logs/
+*.log
+
+# Config sensible (ne pas commit le mot de passe !)
+server/src/main/resources/hibernate.cfg.xml
+
+# OS
+.DS_Store
+Thumbs.db

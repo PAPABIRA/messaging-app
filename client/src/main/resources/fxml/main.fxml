@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.asso.messaging.controller.MainController"
+            prefWidth="900" prefHeight="600"
+            styleClass="main-root">
+
+    <!-- ── Sidebar gauche : membres en ligne ─────────────────────────────── -->
+    <left>
+        <VBox styleClass="sidebar" prefWidth="220" spacing="8">
+
+            <!-- Profil utilisateur -->
+            <VBox styleClass="user-card" spacing="4">
+                <Label fx:id="labelUsername" styleClass="user-name"/>
+                <Label fx:id="labelRole" styleClass="user-role"/>
+            </VBox>
+
+            <Separator/>
+
+            <Label text="Utilisateurs" styleClass="section-title"/>
+
+            <ListView fx:id="listOnlineUsers"
+                      VBox.vgrow="ALWAYS"
+                      styleClass="users-list"/>
+
+            <Separator/>
+
+            <!-- Bouton membres (ORGANISATEUR) -->
+            <Button fx:id="btnAllMembers"
+                    text="👥 Tous les membres"
+                    styleClass="btn-secondary"
+                    maxWidth="Infinity"
+                    onAction="#onGetAllMembers"/>
+
+            <Button fx:id="btnLogout"
+                    text="⬅ Déconnexion"
+                    styleClass="btn-danger"
+                    maxWidth="Infinity"
+                    onAction="#onLogout"/>
+        </VBox>
+    </left>
+
+    <!-- ── Zone de chat principale ───────────────────────────────────────── -->
+    <center>
+        <VBox styleClass="chat-area">
+
+            <!-- En-tête conversation -->
+            <HBox styleClass="chat-header" alignment="CENTER_LEFT">
+                <Label fx:id="labelChatWith"
+                       text="← Sélectionnez un utilisateur"
+                       styleClass="chat-title"/>
+            </HBox>
+
+            <!-- Messages -->
+            <ScrollPane fx:id="chatScroll"
+                        VBox.vgrow="ALWAYS"
+                        fitToWidth="true"
+                        styleClass="chat-scroll">
+                <VBox fx:id="chatBox" styleClass="chat-messages" spacing="4"/>
+            </ScrollPane>
+
+            <!-- Saisie du message -->
+            <HBox styleClass="input-bar" spacing="8" alignment="CENTER">
+                <TextField fx:id="inputMessage"
+                           HBox.hgrow="ALWAYS"
+                           promptText="Écrivez un message…"
+                           styleClass="message-input"
+                           onAction="#onSendMessage"/>
+                <Button text="Envoyer"
+                        styleClass="btn-send"
+                        onAction="#onSendMessage"/>
+            </HBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

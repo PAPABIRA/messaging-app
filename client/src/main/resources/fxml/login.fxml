@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.asso.messaging.controller.LoginController"
+      styleClass="root-container"
+      spacing="20"
+      alignment="CENTER"
+      prefWidth="460" prefHeight="620">
+
+    <!-- Logo / Titre -->
+    <VBox alignment="CENTER" spacing="6">
+        <Label text="💬" style="-fx-font-size: 48px;"/>
+        <Label text="Messagerie G2" styleClass="app-title"/>
+        <Label text="Association &amp; Événements" styleClass="app-subtitle"/>
+    </VBox>
+
+    <!-- Onglets Connexion / Inscription -->
+    <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" prefWidth="380" prefHeight="430">
+
+        <!-- ── Onglet Connexion ── -->
+        <Tab text="Se connecter">
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" styleClass="form-scroll">
+                <VBox spacing="14" styleClass="form-container">
+                    <Label text="Nom d'utilisateur" styleClass="field-label"/>
+                    <TextField fx:id="loginUsername" promptText="Votre identifiant" styleClass="text-field"/>
+
+                    <Label text="Mot de passe" styleClass="field-label"/>
+                    <PasswordField fx:id="loginPassword" promptText="••••••••" styleClass="text-field"/>
+
+                    <Label fx:id="loginError" styleClass="error-label" visible="false" wrapText="true"/>
+
+                    <Button fx:id="loginButton" text="Se connecter"
+                            styleClass="btn-primary"
+                            maxWidth="Infinity"
+                            onAction="#onLoginClicked"/>
+                </VBox>
+            </ScrollPane>
+        </Tab>
+
+        <!-- ── Onglet Inscription ── -->
+        <Tab text="S'inscrire">
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" styleClass="form-scroll">
+                <VBox spacing="12" styleClass="form-container">
+                    <Label text="Nom d'utilisateur" styleClass="field-label"/>
+                    <TextField fx:id="registerUsername" promptText="Choisissez un identifiant" styleClass="text-field"/>
+
+                    <Label text="Mot de passe" styleClass="field-label"/>
+                    <PasswordField fx:id="registerPassword" promptText="••••••••" styleClass="text-field"/>
+
+                    <Label text="Confirmer le mot de passe" styleClass="field-label"/>
+                    <PasswordField fx:id="registerConfirmPassword" promptText="••••••••" styleClass="text-field"/>
+
+                    <Label text="Rôle" styleClass="field-label"/>
+                    <ComboBox fx:id="registerRole" maxWidth="Infinity" styleClass="combo-field"/>
+
+                    <Label fx:id="registerError" styleClass="error-label" visible="false" wrapText="true"/>
+
+                    <Button fx:id="registerButton" text="S'inscrire"
+                            styleClass="btn-primary"
+                            maxWidth="Infinity"
+                            onAction="#onRegisterClicked"/>
+                </VBox>
+            </ScrollPane>
+        </Tab>
+    </TabPane>
+
+</VBox>
