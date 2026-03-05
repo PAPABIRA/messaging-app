@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 /**
- * Entité JPA représentant un message échangé entre deux utilisateurs.
+ * Entité JPA représentant un message échangé entre deux utilisateurs de l'application.
  *
  * RG7 : contenu non vide, max 1000 caractères
  * RG6 : messages hors-ligne conservés en base et livrés à la reconnexion
