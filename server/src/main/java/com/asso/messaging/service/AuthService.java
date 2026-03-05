@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Optional;
 
 /**
- * Service gérant l'inscription et la connexion des utilisateurs.
+ * Service gérant l'inscription et la connexion des utilisateurs de l'application.
  *
  * RG1  : unicité du username
  * RG9  : mot de passe haché BCrypt

@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
  * Entité JPA représentant un membre de l'association.
  *
  * RG1  : username unique
- * RG9  : mot de passe stocké haché (BCrypt)
+ * RG9  : mot de passe stocké et  haché
  * RG4  : status géré à la connexion/déconnexion
  */
 @Entity

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Repository gérant la persistance des utilisateurs via Hibernate.
+ * Repository gérant la persistance des utilisateurs  de l'application via Hibernate.
  */
 public class UserRepository {
 
