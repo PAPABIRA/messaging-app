@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 /**
- * Repository gérant la persistance des messages via Hibernate.
+ * Repository pour gérer la persistance des messages via Hibernate.
  */
 public class MessageRepository {
 
