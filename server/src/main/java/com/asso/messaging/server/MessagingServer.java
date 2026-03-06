@@ -16,12 +16,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/**
- * Point d'entrée du serveur de messagerie.
- *
- * Écoute sur le port configuré et crée un thread par client (RG11).
- * RG12 : tous les événements importants sont journalisés.
- */
+
+ // Le Point d'entrée du serveur de messagerie.
+
 public class MessagingServer {
 
     private static final Logger log = LoggerFactory.getLogger(MessagingServer.class);

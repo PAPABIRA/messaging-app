@@ -14,12 +14,12 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
- * Service métier pour la gestion des messages.
+ * Service  pour la gestion des messages.
  *
- * RG5 : expéditeur connecté, destinataire existant
- * RG6 : messages hors-ligne conservés
- * RG7 : validation contenu
- * RG8 : historique chronologique
+ *  expéditeur connecté, destinataire existant
+ *  messages hors-ligne conservés
+ *  validation contenu
+ *  historique chronologique
  */
 public class MessageService {
 
