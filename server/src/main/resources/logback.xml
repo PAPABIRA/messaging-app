@@ -7,7 +7,7 @@
         </encoder>
     </appender>
 
-    <!-- Fichier de log rotatif -->
+    <!-- Fichier pour le log rotatif -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/server.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
