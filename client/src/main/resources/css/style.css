@@ -45,7 +45,7 @@ develop
 }
 
 .field-label {
-    -fx-font-size: 12px;
+    -fx-font-size: 13px;
     -fx-text-fill: #9999bb;
     -fx-font-weight: bold;
 }
