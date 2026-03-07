@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 
 /**
- * Point d'entrée de l'application cliente JavaFX.
+ * Point d'entrée de l'application cliente JavaFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
  */
 public class MessagingApp extends Application {
 
