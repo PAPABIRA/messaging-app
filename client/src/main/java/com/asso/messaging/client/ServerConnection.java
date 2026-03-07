@@ -17,7 +17,7 @@ import java.util.function.Consumer;
  * Écoute les paquets entrants dans un thread dédié et
  * notifie les listeners enregistrés.
  *
- * RG10 : en cas de perte de connexion, notifie l'UI.
+ * RG10 : en cas de perte de connexion, notifie l'UIEEEEEEEEEEEEEEEEEEE.
  */
 public class ServerConnection {
 
