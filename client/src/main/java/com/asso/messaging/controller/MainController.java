@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Contrôleur principal : liste des membres en ligne, messagerie, historique.
+ * Contrôleur principale : liste des membres en ligne, messagerie, historique.
  */
 public class MainController {
 
