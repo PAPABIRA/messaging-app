@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 
 /**
- * Contrôleur JavaFX pour l'écran de connexion / inscriptionAAAAAAAAAAAAAAAAAAAAA.
+ * Contrôleur JavaFX pour l'écran de connexion / inscription utilisateur.
  */
 public class LoginController {
 
