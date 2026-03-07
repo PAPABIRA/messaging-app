@@ -5,7 +5,7 @@
  feature/client-chat
 /* Palettes */
 
-/* Paletteggggggggggggggggggggggggg */
+/* Palettes*/
 develop
 /* Fond principal :  #1e1e2e */
 /* Fond secondary : #2a2a3e */
@@ -13,7 +13,7 @@ develop
 /* Texte :          #e0e0ef */
 /* Erreur :         #ff6b6b */
 
-/* ── Racine ───────────────────────────────────────────────────── */
+/* ── Racine du code ───────────────────────────────────────────────────── */
 
 .root-container {
     -fx-background-color: #1e1e2e;
