@@ -9,7 +9,7 @@
             prefWidth="900" prefHeight="600"
             styleClass="main-root">
 
-    <!-- ── Sidebar gauche : membres en ligne ─────────────────────────────── -->
+    <!-- ── Sidebar gauche : membres en lignees ─────────────────────────────── -->
     <left>
         <VBox styleClass="sidebar" prefWidth="220" spacing="8">
 
