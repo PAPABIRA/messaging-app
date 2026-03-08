@@ -93,7 +93,7 @@ public class ClientHandler implements Runnable {
 
     // ── Handlers métier ──────────────────────────────────────────────────────
 
-    /** RG1, RG9 */
+
     private void handleRegister(Packet packet) {
         String username = packet.getString("username");
         String password = packet.getString("password");
@@ -141,7 +141,7 @@ public class ClientHandler implements Runnable {
 
         log.info("CONNEXION : {} ({})", username, currentUser.getRole()); // RG12
 
-        // Construire le DTO de réponse
+        // Construction du DTO de réponse
         UserDTO dto = toUserDTO(currentUser);
         send(new Packet(PacketType.SUCCESS)
                 .put("message", "Connexion réussie.")

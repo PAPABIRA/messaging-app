@@ -12,7 +12,7 @@
       alignment="CENTER"
       prefWidth="460" prefHeight="620">
 
-    <!-- Logo / Titresssssssssss -->
+    <!-- Logo / Titres -->
     <VBox alignment="CENTER" spacing="6">
         <Label text="💬" style="-fx-font-size: 48px;"/>
         <Label text="Messagerie G2" styleClass="app-title"/>
